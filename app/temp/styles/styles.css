@@ -723,8 +723,16 @@ a {
         padding-right: 65px;
     }
 
+.row--gutters-large > div {          /* select all the direct children that use a tag of div */
+        padding-right: 100px;
+    }
+
 .row--gutters {
         margin-right: -65px;
+    }
+
+.row--gutters-large {
+        margin-right: -100px;
     }
 
 .row__b-margin-until-medium
@@ -749,6 +757,12 @@ a {
         }
 
 
+        .row__medium-6 {
+            float: left;
+            width: 50.0%;
+        }
+
+
         .row__medium-8 {
             float: left;
             width: 66.66%;
@@ -761,8 +775,8 @@ a {
 
 .generic-content-container p {     /* nested paragraph tags */
        line-height: 1.65; 
-       
-       margin: 1.8rem 0rem;
+       font-weight: 300;
+       margin: 0 0 1.8rem 0rem;
     }
 
 @media (min-width: 530px)
@@ -776,5 +790,96 @@ a {
 .generic-content-container p a {       /* any link in a paragram within the class ... */
         font-weight: 700;
     }
+
+.section-title
+{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width: 530px)
+    {
+
+.section-title
+{
+        font-size: 3.75rem
+}
+    }
+
+.section-title strong {
+        font-weight: 500;
+    }
+
+.section-title__icon
+    {
+        
+        display: block;  /* pushes text after it to a new line */
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem; 
+    }
+
+@media (min-width: 530px)
+    {
+
+.section-title__icon
+    {
+           margin-right: .5rem;
+           margin-left: 0;
+           display: inline-block;  /* DOESN'T PUSH text after it to a new line */
+           margin-bottom: 0 
+    }
+    }
+
+.feature-item {
+    position: relative;
+    
+    padding-bottom: 1.9rem;
+}
+
+@media (min-width: 530px)
+    {
+
+.feature-item {
+        padding-left: 94px
+}
+    }
+
+.feature-item__icon {
+        display: block;
+        margin: 0 auto;
+        
+    }
+
+@media (min-width: 530px)
+    {
+
+.feature-item__icon {
+            position: absolute;
+            left: 0
+        
+    }
+    }
+
+.feature-item__title {
+      font-size: 1.6rem;
+      font-weight: 300; 
+      margin-bottom: .8rem; 
+      margin-top: .7em;
+      color: red;
+      text-align: center;
+    }
+
+@media (min-width: 530px)
+    {
+
+.feature-item__title {
+        text-align: left;
+        margin-top: 1em;
+        font-size: 1.875rem
+    }
+    }
+
 
 
