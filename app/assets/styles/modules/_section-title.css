@@ -9,6 +9,11 @@
         font-size: 3.75rem;
     }
 
+    &--blue
+    {
+        color: $mainblue;
+    }
+
     strong {
         font-weight: 500;
     }
@@ -23,7 +28,9 @@
 
        @mixin atSmall
        {
-           margin-right: .5rem;
+        position: relative;
+        top: 8px;   
+        margin-right: .5rem;
            margin-left: 0;
            display: inline-block;  /* DOESN'T PUSH text after it to a new line */
            margin-bottom: 0;
