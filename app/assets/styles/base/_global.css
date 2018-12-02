@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {     /* select every element on the page */
+    box-sizing: border-box;  /* applies padding but doesn't effect the calculated width values */
+}
+
+a {
+    color: $mainorange;
+}

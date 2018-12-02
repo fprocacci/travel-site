@@ -1,0 +1,17 @@
+.generic-content-container
+{
+    p {     /* nested paragraph tags */
+       line-height: 1.65; 
+       
+       margin: 1.8rem 0rem;
+
+       @mixin atSmall
+       {
+        font-size: 1.125rem;           
+       }
+    }
+
+    p a {       /* any link in a paragram within the class ... */
+        font-weight: 700;
+    }
+}
