@@ -16,9 +16,15 @@
     @mixin atMedium {
         background-color: rgba($mainblue, .3);
         position: fixed;
+
+        &--dark
+        {
+            background-color: rgba(23, 51, 72, .85);
+        }        
         
     }
 
+    
     
 
     &__btn-container
@@ -40,11 +46,18 @@
         left:50%;
         transform: translateX(-50%) scale(.8);
         transform-origin: 50% 0;
+        transition: transform .3s ease-out;
 
         @mixin atMedium
         {
             left: auto;
             transform: translateX(0);
+
+            .site-header--dark & /* targets logo */
+            {
+                transform: scale(.57);
+
+            }
         }
 
 
@@ -86,7 +99,7 @@
             height: 3px;
             background-color: #FFF;
             transition: all .3s ease-out;
-            transform-origin: 0 50%;
+            transform-origin: 0 50;
         }        
 
         &::after {
@@ -137,6 +150,7 @@
            z-index: 1;
            padding-top: 0;
            transform: scale(1);
+           margin-top: 0px;
         }
 
         &--is-visible {

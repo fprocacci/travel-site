@@ -34,3 +34,18 @@
       }
     }
 }
+
+.reveal-item {
+    opacity: 0;
+    transition: opacity 1.3s;
+
+    &--is-visible {
+        opacity: 1;
+        
+        
+        color:green;
+    }    
+
+    
+}
+

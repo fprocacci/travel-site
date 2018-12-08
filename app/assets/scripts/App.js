@@ -1,24 +1,12 @@
-
-var $ = require('jquery');
-
-//var Person = require('./modules/john.js');  /* require is p/o node.js, NOT JAVASCRIPT */
-import Person from './modules/john';      /* es6 way of importing a module */
-
+import $ from 'jquery';
 import MobileMenu from  './modules/MobileMenu';
+import RevealOnScroll from './modules/RevealOnScroll';
+import StickyHeader from './modules/StickyHeader';
 
-class Adult extends Person {
-    payTaxes() {
-        console.log(this.name + " taxes");
-    }
-}
 
-/*alert("test webpack 123 8");*/
+var mobileMenu = new MobileMenu();
 
-/*var john = new Adult("Felix likes blue");
-john.greet();
-john.payTaxes();*/
+var x = new RevealOnScroll($ (".feature-item"), "61%");
+var y = new RevealOnScroll($ (".testimonial"), "80%");
 
-/* $("h1").remove(); */
-
-var mobilemenu = new MobileMenu();
-
+var stickyHeader = new StickyHeader();
