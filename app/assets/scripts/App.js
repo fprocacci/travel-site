@@ -5,6 +5,7 @@ import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
 
 
+
 var mobileMenu = new MobileMenu();
 
 var x = new RevealOnScroll($ (".feature-item"), "61%");
