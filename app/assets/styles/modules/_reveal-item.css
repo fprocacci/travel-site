@@ -1,0 +1,18 @@
+
+.reveal-item-del2 {
+    opacity: 1;
+    
+color: green;
+z-index : 5775;
+    
+    transform: scale(3.15);
+    transition: scale 1.2s;
+
+    &--is-visible {
+        opacity: 1;
+        transform: scale(1) ;
+       
+    }
+
+    
+}
