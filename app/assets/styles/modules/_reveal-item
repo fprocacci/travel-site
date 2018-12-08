@@ -1,12 +1,14 @@
-.reveal-item {
-    opacity: 0;
+
+
+.reveal-item-del1 {
+    opacity: 1;
     
 
     transition: all 1.2s;
     transform: scale(2.15);
 
     &--is-visible {
-        opacity: 0;
+        opacity: 1;
         transform: scale(1) ;
        
     }

@@ -1056,6 +1056,21 @@ a {
     }
     }
 
+.reveal-item {
+    opacity: 0;
+    -webkit-transition: opacity 1.3s;
+    transition: opacity 1.3s;    
+
+    
+}
+
+.reveal-item--is-visible {
+        opacity: 1;
+        
+        
+        color:green;
+    }
+
 .testimonial
 {
     background-color: rgba(255, 255, 255, .5);
@@ -1497,8 +1512,8 @@ a {
     }
     }
 
-.reveal-item {
-    opacity: 0;
+.reveal-item-del1 {
+    opacity: 1;
     
 
     -webkit-transition: all 1.2s;
@@ -1511,8 +1526,8 @@ a {
     
 }
 
-.reveal-item--is-visible {
-        opacity: 0;
+.reveal-item-del1--is-visible {
+        opacity: 1;
         -webkit-transform: scale(1) ;
                 transform: scale(1) ;
        
