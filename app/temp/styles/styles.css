@@ -619,6 +619,11 @@ a {
         max-width: 976px;   
     }
 
+.wrapper--narrow
+    {
+        max-width: 500px;
+    }
+
 .wrapper .wrapper {
         padding-left: 0;
         padding-right: 0;
@@ -973,6 +978,12 @@ a {
 {
         font-size: 3.75rem
 }
+    }
+
+.section-title--less-margin
+    {
+        margin-bottom: 1.3rem;
+        margin-top: 0;
     }
 
 .section-title--blue
@@ -1553,6 +1564,100 @@ a {
                 transform: scale(1) ;
        
     }
+
+.modal
+{
+    position: fixed;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, .94);
+    top:0;      /* take up full width of the browser window */
+    bottom:0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+
+}
+
+.modal--is-visible {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+    }
+
+.modal__description {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+.modal__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        font-size: 2rem;
+        -webkit-transform: scaleY(1.3rem);
+                transform: scaleY(1.3rem);
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        color: #2f5572;
+
+    }
+
+.modal__close:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+.modal__inner
+    {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
+.social-icons
+{
+    text-align: center;
+}
+
+.social-icons__icon
+    {
+        background-color: orange;
+        display: inline-block;  /* allow social media icons to display on a single line */
+        margin: 0 5px 5px 5px;
+        width: 33%;
+        height: 70px;
+        position: relative;
+    }
+
+@media (min-width: 530px)
+    {
+
+.social-icons__icon
+    {
+            width: 70px;
+            margin: 0 5px
+    }
+    }
+
+.social-icons__icon .icon {
+            display: block; /* allow use of width and height from sprite elements */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+        }
 
 
 

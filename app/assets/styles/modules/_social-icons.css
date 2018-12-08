@@ -1,0 +1,27 @@
+.social-icons
+{
+    text-align: center;
+
+    &__icon
+    {
+        background-color: $mainorange;
+        display: inline-block;  /* allow social media icons to display on a single line */
+        margin: 0 5px 5px 5px;
+        width: 33%;
+        height: 70px;
+        position: relative; 
+
+        @mixin atSmall {
+            width: 70px;
+            margin: 0 5px;
+        }
+
+        .icon {
+            display: block; /* allow use of width and height from sprite elements */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
