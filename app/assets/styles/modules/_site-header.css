@@ -55,7 +55,7 @@
 
             .site-header--dark & /* targets logo */
             {
-                transform: scale(.57);
+                transform: scale(.56);
 
             }
         }
